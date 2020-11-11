@@ -1,0 +1,157 @@
+:root{
+    font-family : sans-serif;
+    
+  }
+  
+  *{
+    margin : 0;
+    padding : 0;
+    text-decoration : none;
+    list-style: none;
+  }
+  
+  body{
+    width : 1200px;
+    margin : auto;
+    box-shadow: 1px 1px lightpink;
+  }
+  
+  /* realisation mise en forme de l'entête*/
+  
+  header{
+    height : 300px;
+    background-color : #9195F2;
+    position : relative;
+  }
+  
+  /*mise en forme logo*/
+  
+  #logo{
+    position : relative;
+    top : 80px;
+    left : 150px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+  }
+  
+  /*mise en forme titre*/ 
+  
+  header div p{
+    position : relative;
+    top : 78px;
+    left : 180px;
+    font-family: 'Big Shoulders Stencil Display', cursive;
+    color : white;
+    font-size : 2em;
+  }
+  
+  /* realisation de la barre de navigation*/
+  
+  #main-nav{
+    display : flex;
+    position : absolute;
+    bottom : -110px;
+    left : 40px;
+  }
+  nav ul li a{
+    color : white;  
+  }
+  nav ul li{
+    width : 100px;
+    text-align : center;
+  }
+  nav ul ul{
+    visibility : hidden;
+    border : 1px solid transparent;
+    width : 100px;
+    background-color : white; 
+    border-radius : 5px;
+    box-shadow : 1px 1px lightgrey;
+  }
+  nav ul li ul li a{
+    color : grey;
+  }
+  nav ul li ul li:hover{
+    background-color : lightgrey;
+    box-shadow : 1px 1px lightgrey;
+  }
+  nav ul li ul li{
+    width : 100px;
+    height : 30px;
+    line-height : 30px;
+  }
+  nav li:hover ul{
+    visibility : visible;
+  }
+  
+  /*section networks*/
+  
+  #nav-networks ul{
+    position : absolute;
+    bottom : 12px;
+    right : 40px;
+    display : flex;
+    width : 410px;
+    border-radius : 50px;
+    background-color: #3C3E63 
+  }
+  #nav-networks ul li{
+    width : 80px;
+    text-align : center;
+    margin-left : 2px;
+  }
+  #nav-networks ul li a{
+    width : 80px;
+    color : yellow;
+  }
+  #nav-networks ul li:hover a{
+    width : 90px;
+    color : white;
+    background-color: #3C3E63
+  }
+  
+  /* body */
+  
+  .body-section{
+    display : flex;
+  }
+  
+  article , aside{
+    margin-top : 80px;
+    height : 500px; 
+    padding: 20px;
+    border : 1px solid lightpink;
+  }
+  article{  
+    width : 66%;  
+  }
+  aside{
+    width : 33%;
+  }
+  footer{  
+    color : white;
+    background-color : black;
+  }
+  
+  footer div{
+    display : flex; 
+    justify-content : space-between;
+    width : 90%;
+    margin : auto;
+    margin-top : 40px;
+    margin-bottom : 40px;
+    padding : 10px 0 10px 0;
+  }
+  footer p{
+    background-color : grey;
+    color : white;
+    width : 100%;
+    height : 40px;
+    text-align : center;
+    margin-bottom : 100px;
+    line-height : 30px;
+    padding-top : 10px;
+    border-top : 2px dashed;
+    border-bottom : 2px dashed;
+    font-style : italic;
+  }
+  
