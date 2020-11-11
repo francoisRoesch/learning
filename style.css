@@ -1,0 +1,230 @@
+/* mise en forme principale*/
+@font-face {
+    font-family: 'ballparkweiner';
+    src: url('element design/polices/webfontkit-ballpark/ballpark-webfont.eot');
+    src: url('element design/polices/webfontkit-ballpark/ballpark-webfont.eot?#iefix') format('embedded-opentype'),
+         url('element design/polices/webfontkit-ballpark/ballpark-webfont.woff2') format('woff2'),
+         url('element design/polices/webfontkit-ballpark/ballpark-webfont.woff') format('woff'),
+         url('element design/polices/webfontkit-ballpark/ballpark-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'dayrom';
+    src: url('element design/polices/dayrom.eot');
+    src: url('element design/polices/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('element design/polices/dayrom.woff') format('woff'),
+         url('element design/polices/dayrom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    width: 950px;
+    margin : auto;
+    background-image: url('element design/images/fond_jaune.png');
+    font-family: dayrom, Arial, serif;
+    font-size:0.9em;
+    color: #181818;
+}
+
+h1{
+    font-family: ballparkweiner, Arial, serif;
+    text-transform:capitalize;
+    margin-top:5px 0 0 5px;
+}
+h1 p{
+    font-family: dayrom,Arial, serif;
+    font-weight: normal;
+    font-size: 0.8em;
+    margin: 0;
+    padding:0;    
+}
+nav a, h2 {
+    text-transform: uppercase;
+    font-weight: normal;
+}
+ul{
+    list-style-type: none;
+}
+header{
+    background-image: url('element design/images/separateur.png');
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+footer{
+    background-image: url('element design/images/separateur.png');
+    background-repeat: repeat-x;
+    background-position: top;
+}
+/* fin de mise en forme principale*/
+
+/* mise en forme lien de navigation*/
+
+nav{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end ;
+    margin : 0 15px 0 0 
+}
+header, nav ul{
+    display:flex;
+    justify-content: space-between;
+}
+nav ul li a{
+    margin: 0 0 0 15px;
+    padding:0;
+    text-decoration: none;
+    font-weight: bold;
+    color: #181818;
+    font-size:1.5em;
+
+}
+nav ul li a:hover{
+    border-bottom : 2px solid #181818;
+    font-size:1.7em;
+}
+/*mise en forme du herobanner*/
+#herobanner{
+    height: 219px;
+    width:950px;
+    margin: 10px 0px 10px 0px;
+    background: url("element design/images/sanfrancisco.jpg") no-repeat scroll center;
+    border-radius: 5px 5px 5px 5px;
+    position: relative;
+}
+#banner_description{
+    color: #ffffff;
+    background-color: #181818;
+    opacity: 0.9;
+    width:950px;
+    margin:0;
+    padding:1px 0 1px 0;
+    border-radius:0 0 5px 5px;
+    position : absolute;
+    bottom : 0;
+    left: 0;
+
+}
+#banner_description p{
+    margin-left : 5px;
+}
+#banner_description a{
+    color: #ffffff;
+    text-decoration: none;
+    background: url('element design/images/fond_degraderouge.png') repeat-x;
+    border-radius: 3px;
+    padding:5px 2px 5px 2px;
+    text-align: center;
+    position : absolute;
+    bottom: 10px;
+    right: 10px;
+}
+/*fin de mise en forme du herobanner*/
+
+/* mise en forme de la section*/
+section{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-align:justify;
+}
+section article{
+    width: 65%;
+    margin:0 2px 5px 0;
+    padding: 0 20px 5px 5px;
+    align-self:flex-start;
+}
+section article h2{
+    margin: 0;
+    padding: 0;
+    position:relative;
+}
+#titre_article{
+    position:absolute;
+    left: 52px;
+    bottom:17px;
+}
+section aside{
+    width:30%;
+    margin: 0 0 5px 2px;
+    padding: 0 15px 5px 15px;
+    background-color : #928f8f;
+    align-self: baseline;
+    color:#ffffff;
+    border-radius: 5px;
+    position: relative;
+}
+#bulle{
+    position : absolute;
+    top: 100px;
+    left:-12px;
+}
+section aside h2{
+    margin:5px 0 5px 0;
+    padding:0;
+    text-align: center;
+}
+section aside h2 img{
+    border:1px solid #181818;
+    margin: 0 10px 0 0;
+    box-shadow: 1px 1px #181818;
+}
+section aside ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+/*section aside ul li img{
+    margin: 0 0 0 3px;
+}*/
+/*fin de mise en forme de la section*/
+/*mise en forme du footer*/
+footer{
+    display:flex;
+    justify-content:space-between;
+    position: relative;
+    margin: 10px 0 0 10px;
+}
+footer p img{
+    position : absolute;
+    top : -2px;
+    left : 448px;
+    margin-bottom:5px;
+}
+#tweets{
+    margin:0;
+    padding:0;
+}
+#photos ul{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#photos ul li{
+    border:1px solid #181818;
+    box-shadow: 1px 1px #181818;
+    margin-left: 5px;
+}
+#amislinks ul li{
+    list-style-image: url('element design/images/ico_liensexterne.png');
+    text-decoration:none;
+    text-decoration: red;
+
+}
+#amisblocs{
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/*fin de mise en forme du footer*/
